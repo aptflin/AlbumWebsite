@@ -73,23 +73,76 @@
 .controls{
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    height: 40vh; /* 設置全螢幕高度 */
-    gap: 750px; /* Adjusts the spacing between the buttons */
+    justify-items: center;
+    align-items: center;
+    height: 16vh; /* 設置全螢幕高度 */
+    gap: 600px; /* Adjusts the spacing between the buttons */
 }
-.btn{
+/*.btn{
     background-color: transparent;
-    width: 300px; /* 設置圖片最大寬度為螢幕的 90% */
-    height: 300px; /* 設置圖片最大高度為螢幕的 90% */
+    width: 300px; 
+    height: 300px;
     border: none;
     align-items: center;
     cursor: pointer; 
     background-size: cover;
+}*/
+.btn{
+    color: white;
+    width: 300px; 
+    height: 270px;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    font-family: "Mantou Sans Regular", monospace;
+    text-align:center;
 }
-.btn img{
-    max-width: 100%; /* 設置圖片最大寬度為螢幕的 90% */
-    max-height: 100%; /* 設置圖片最大高度為螢幕的 90% */
-    max-width: auto;
-    height: auto;         
+.btn:hover{
+    color: #F71D23;
+}
+.btn.next:hover{
+    color: #F71D23;
+}
+.btn.next{
+    color: white;
+    width: 300px; 
+    height: 180px;
+}
+
+.aboutThisAlbum{
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr;
+
+    align-items: center;
+    
+}
+
+.aboutThisAlbum img{
+
+    max-width: 40%; /* 設置圖片最大寬度為螢幕的 90% */
+    max-height: 40%; /* 設置圖片最大高度為螢幕的 90% */
+    width: auto;
+    height: auto;    
+}
+.cdIcon{
+    margin: 0px;
+}
+
+.nextAlbum{
+    display: flex;
+    flex-direction: column;
+    height: 95vh; /* 設置全螢幕高度 */
+    grid-template-rows: 1fr 1fr;
+    align-items: center;   
+
+    justify-content:center;
+}
+
+.nextAlbum img{
+
+    max-width: 40%; /* 設置圖片最大寬度為螢幕的 90% */
+    max-height: 40%; /* 設置圖片最大高度為螢幕的 90% */
 }
