@@ -29,7 +29,41 @@ const twentyeightAudio = new Audio('./music/22. LUNARFACE - 紫花海.mp3');
 
 const nextBtn = document.querySelector('.next');
 const albumName = document.querySelector('.album-name')
+
+const cdImage = document.querySelector('.cd-img'); // 新增抓取 CD 圖片的元素
 //birdOfFeatherAudio.play();
+
+const cdImages = [
+    './images/AlbumCover/Cover (1).png',
+    './images/AlbumCover/Cover (2).png',
+    './images/AlbumCover/Cover (3).png',
+    './images/AlbumCover/Cover (4).png',
+    './images/AlbumCover/Cover (5).png',
+    './images/AlbumCover/Cover (6).png',
+    './images/AlbumCover/Cover (7).png',
+    './images/AlbumCover/Cover (8).png',
+    './images/AlbumCover/Cover (9).png',
+    './images/AlbumCover/Cover (10).png',
+    './images/AlbumCover/Cover (11).png',
+    './images/AlbumCover/Cover (12).png',
+    './images/AlbumCover/Cover (13).png',
+    './images/AlbumCover/Cover (14).png',
+    './images/AlbumCover/Cover (15).png',
+    './images/AlbumCover/Cover (16).png',
+    './images/AlbumCover/Cover (17).png',
+    './images/AlbumCover/Cover (18).png',
+    './images/AlbumCover/Cover (19).png',
+    './images/AlbumCover/Cover (20).png',
+    './images/AlbumCover/Cover (21).png',
+    './images/AlbumCover/Cover (22).png',
+    './images/AlbumCover/Cover (23).png',
+    './images/AlbumCover/Cover (24).png',
+    './images/AlbumCover/Cover (25).png',
+    './images/AlbumCover/Cover (26).png',
+    './images/AlbumCover/Cover (27).png',
+    './images/AlbumCover/Cover (28).png'
+    // 根據專輯數量加入更多圖片路徑
+];
 
 const songs = [
     { ele: oneAudio, albumName: 'HIT ME HARD AND SOFT - BIRDS OF FEATHER' },
@@ -67,6 +101,8 @@ let currentSong = songs[current].ele;
 albumName.textContent = songs[current].albumName;
 currentSong.play();
 
+cdImage.src = cdImages[current]; // 初始化第一張 CD 圖片
+
 nextBtn.addEventListener('click', () => {
     // 暫停當前歌曲並重設播放進度
     currentSong.pause();
@@ -79,5 +115,7 @@ nextBtn.addEventListener('click', () => {
     // 更新專輯名稱並播放新的歌曲
     albumName.textContent = songs[current].albumName;
     currentSong.play();
+
+    cdImage.src = cdImages[current]; // 更新 CD 圖片
 })
 
