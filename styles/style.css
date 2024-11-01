@@ -64,8 +64,9 @@
     text-align: center;
     color: white;
 
-    font-family: "源石黑體丹 H", monospace;
+    font-family: "源石黑體月 H & 源石黑體丹 H & GenSekiGothic2 JP H & GenSekiGothic2 PJP H", monospace;
     font-size: 30px;
+    font-weight:bolder;
 }
 
 /*暫停跟下一首按鈕*/
