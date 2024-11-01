@@ -2,7 +2,8 @@ const oneAudio = new Audio('./music/Billie Eilish - BIRDS OF A FEATHER.mp3');
 const twoAudio = new Audio('./music/Multiverse - 有緣作伙.mp3');
 const threeAudio = new Audio('./music/REX, Quanzo - 不老泉.mp3');
 const fourAudio = new Audio('./music/CHROMAKOPIA - Sticky.mp3');
-/*const fiveAudio = new Audio('./music/G2SLS - 眼鏡上面標籤CARTIER.mp3');*/
+const fourPointFiveAudio = new Audio('./music/七里香 - 七里香.mp3');
+const fiveAudio = new Audio('./music/6. OUTTABODY靈魂出竅 - CHANGE.mp3');
 const sixAudio = new Audio('./music/G2SLS - 眼鏡上面標籤CARTIER.mp3');
 const sevenAudio = new Audio('./music/2.Bad Habit .mp3');
 const eightAudio = new Audio('./music/3.360.mp3');
@@ -11,7 +12,7 @@ const tenAudio = new Audio('./music/5.No One Noticed.mp3');
 const elevenAudio = new Audio('./music/6.Romantic Homicide .mp3');
 const twelveAudio = new Audio('./music/7.Espresso.mp3');
 const thirteenAudio = new Audio('./music/8.范特西-愛在西元前.mp3');
-/*const fourteenAudio = new Audio('./music/9. Shut Up My Moms Calling.mp3');*/
+const fourteenAudio = new Audio('./music/is there free breakfast here_.mp3');
 const fifteenAudio = new Audio('./music/10. ADICA -ADICA.mp3');
 const sixteenAudio = new Audio('./music/11.髒藝術家-髒藝術家.mp3');
 const seventeenAudio = new Audio('./music/12. 夢想成真-...夢中夢中夢中夢中....mp3');
@@ -35,7 +36,8 @@ const songs = [
     { ele: twoAudio, albumName: '破籠 - 有緣作伙' },
     { ele: threeAudio, albumName: 'MEAL NO.06 - 不老泉' },
     { ele: fourAudio, albumName: 'CHROMAKOPIA - Sticky' },
-    /*{ ele: fiveAudio, albumName: 'G2SLS - 眼鏡上面標籤CARTIER' },*/
+    { ele: fourPointFiveAudio, albumName: '七里香 - 七里香' },
+    { ele: fiveAudio, albumName: 'OUTTABODY靈魂出竅 - CHANGE' },
     { ele: sixAudio, albumName: 'G2SLS - 眼鏡上面標籤CARTIER' },
     { ele: sevenAudio, albumName: 'Static - Bad Habit' },
     { ele: eightAudio, albumName: 'Brat - 360' },
@@ -44,7 +46,7 @@ const songs = [
     { ele: elevenAudio, albumName: 'Petals to Thorns - Romantic Homicide' },
     { ele: twelveAudio, albumName: "Short n'Sweet - Espresso"},
     { ele: thirteenAudio, albumName: '范特西 - 愛在西元前' },
-    /*{ ele: fourAudio, albumName: 'G2SLS - 眼鏡上面標籤CARTIER' },*/
+    { ele: fourteenAudio, albumName: 'Ugly duck - is there free breakfast here' },
     { ele: fifteenAudio, albumName: 'ADICA - ADICA' },
     { ele: sixteenAudio, albumName: '髒藝術家 - 髒藝術家' },
     { ele: seventeenAudio, albumName: '夢想成真 - ...夢中夢中夢中夢中...' },
@@ -52,7 +54,7 @@ const songs = [
     { ele: nineteenAudio, albumName: '帶光者 - 花火' },
     { ele: twentyAudio, albumName: 'good kid,m.A.A.d city - Money Trees' },
     { ele: twentytwoAudio, albumName: 'TESTING - Praise The Lord' },
-    { ele: twentythreeAudio, albumName: 'EARTHBOUND-Way Up' },
+    { ele: twentythreeAudio, albumName: 'EARTHBOUND - Way Up' },
     { ele: twentyfourAudio, albumName: 'eternal sunshine - we cant be friends' },
     { ele: twentyfiveAudio, albumName: 'The Melodic Blue - family ties' },
     { ele: twentysixAudio, albumName: 'Dream - You Can Take Me High' },
