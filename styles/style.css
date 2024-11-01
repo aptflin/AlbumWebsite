@@ -73,19 +73,33 @@
 .controls{
     position: absolute;
     display: flex;
-    
+    justify-content: center;
+    align-items: baseline;
+    height: 40vh; /* 設置全螢幕高度 */
+    padding: 0;
+    margin: 0;
+    gap: 500px; /* Adjusts the spacing between the buttons */
 }
 .btn{
-    margin: 400px;
     background-color: transparent;
     border: none;
-    color: white;
-    font-size: 50px;
-    cursor: pointer;/*滑鼠指到這個東東游標就會變手指*/
-    
-    font-family: "Mantou Sans Regular", monospace;
-    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    cursor: pointer; 
+}
+.btn img{
+    max-width: 45%; /* 設置圖片最大寬度為螢幕的 90% */
+    max-height: 45%; /* 設置圖片最大高度為螢幕的 90% */
+    max-width: auto;
+    height: auto;
+    margin:  0px auto;
+         
 }
 .btn:hover{
     color:  #FF0001;
+}
+.btn:first-child {
+   
+    width: 1000px;
 }
