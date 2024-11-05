@@ -27,6 +27,7 @@ const twentysevenAudio = new Audio('./music/21. 姚中二 - NFT.mp3');
 const twentyeightAudio = new Audio('./music/22. LUNARFACE - 紫花海.mp3');
 
 const nextBtn = document.querySelector('.next');
+const aboutBtn = document.querySelector('.about');
 const albumName = document.querySelector('.album-name')
 //birdOfFeatherAudio.play();
 
@@ -79,3 +80,14 @@ nextBtn.addEventListener('click', () => {
     currentSong.play();
 })
 
+aboutBtn.addEventListener('click', () => {
+    if (current == 0){
+        window.location.href='oneweb.html'
+    }
+    else if(current == 1){
+        window.location.href='twoweb.html'
+    }
+    else if(current == 2){
+        window.location.href='threeweb.html'
+    }
+})

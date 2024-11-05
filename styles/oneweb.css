@@ -1,0 +1,111 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.bg img {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 專輯介紹區 */
+.album-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 10, 0.833);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+}
+
+/* 專輯封面圖片 */
+.album-cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px; /* 圖片與文字之間的間距 */
+}
+
+/* 專輯名稱與介紹 */
+.album-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1; /* 使 album-details 佔據右側剩餘空間 */
+}
+
+.album-details h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.album-details p {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 16px;
+    margin: 0 0 10px;
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+.button {
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 無邊框 */
+    color: white; /* 文字顏色 */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* 漸變效果 */
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* 懸浮效果 */
+.button:hover {
+    color: #d60c0c; /* 懸浮時文字變色 */
+    text-shadow: 0px 0px 8px rgba(239, 28, 28, 0.8); /* 發光效果 */
+}
+
+.back-button {
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 無邊框 */
+    color: white; /* 文字顏色 */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* 漸變效果 */
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* 確保按鈕位於最上層 */
+}
+
+/* 懸浮效果 */
+.back-button:hover:hover {
+    color: #d60c0c; /* 懸浮時文字變色 */
+    text-shadow: 0px 0px 8px rgba(239, 28, 28, 0.8); /* 發光效果 */
+}

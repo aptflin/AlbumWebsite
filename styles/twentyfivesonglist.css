@@ -1,0 +1,133 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.bg img {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+body {
+    display: flex;
+    flex-direction: column; /* 垂直排列內容 */
+    align-items: center;
+    padding: 40px 0; /* 添加上下間距 */
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0; /* 確保沒有外邊距 */
+    overflow-x: hidden; /* 隱藏水平滾動條（如果需要） */
+}
+.song-list {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 10, 0.833);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* 將內容設為垂直排列 */
+    align-items: center;
+    width: 700px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    
+}
+/* 單首歌曲樣式 */
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.song-number {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    color: #ddd;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.song-name {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.artist-name {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.home-button {
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 無邊框 */
+    color: white; /* 文字顏色 */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* 漸變效果 */
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* 確保按鈕位於最上層 */
+}
+
+/* 懸浮效果 */
+.home-button:hover:hover {
+    color: #d60c0c; /* 懸浮時文字變色 */
+    text-shadow: 0px 0px 8px rgba(239, 28, 28, 0.8); /* 發光效果 */
+}
+
+.back-button {
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 無邊框 */
+    color: white; /* 文字顏色 */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* 漸變效果 */
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* 確保按鈕位於最上層 */
+}
+
+/* 懸浮效果 */
+.back-button:hover:hover {
+    color: #d60c0c; /* 懸浮時文字變色 */
+    text-shadow: 0px 0px 8px rgba(239, 28, 28, 0.8); /* 發光效果 */
+}
