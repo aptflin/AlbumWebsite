@@ -98,7 +98,7 @@
     text-decoration: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 2; /* 確保按鈕位於最上層 */
